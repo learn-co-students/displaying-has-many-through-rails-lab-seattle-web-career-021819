@@ -1,0 +1,6 @@
+Create a Patient#show page that lists the date and time for each of their appointments and links to the corresponding doctor's show page.
+
+<%= @patient.appointments.each do |apt| %>
+  <%= link_to('apt.doctor', doctor_path(apt.doctor)) %>
+
+<% end %>
